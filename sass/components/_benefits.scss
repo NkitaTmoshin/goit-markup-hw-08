@@ -1,0 +1,60 @@
+.benefits {
+        padding-bottom: 60px;
+        padding-top: 60px;
+
+    &__list {
+    display: block;
+    padding: 0;
+    margin: 0;
+    
+        @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;;
+    }   
+}
+    &__list-item {
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 2 * 30px) / 2);
+            margin: 15px;
+                  
+        }
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }   
+}
+    &__subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $card-title-color;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 767px){
+        text-align: center;
+    }
+}
+    &__text {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $card-text-color;
+}
+
+    &__container-icon {
+    display: flex;
+    min-height: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: $background-color;
+    border-radius: 4px;
+    }
+}

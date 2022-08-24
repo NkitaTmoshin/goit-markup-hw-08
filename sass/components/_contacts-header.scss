@@ -1,0 +1,75 @@
+.header-contacts {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 0px;
+    fill: currentColor;
+    color: $card-text-color;
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 84px;
+        }
+        @media screen and (min-width:1200px) {
+            margin-left: 271px;
+            display: flex;
+            flex-direction: row;
+        }
+    
+    &__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: $card-text-color;
+    text-decoration: none;
+    list-style: none;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        line-height: 14px;
+        }
+        
+}
+    &__link--blue {
+        @media screen and (min-width: 480px) and (max-width: 767px){
+        color: $brand-color;
+        font-size: 34px;
+        margin-bottom: 32px;
+        }
+    }
+    &__item {
+    display: flex;
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        &:not(:last-child){
+            margin-top: 10px;
+        }
+        
+    }
+    @media screen and (min-width: 1200px){
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+    
+
+}
+    &__link:hover,
+    &__link:focus  {
+    fill: $brand-color;
+    color: $brand-color;
+}
+
+    &__icon {
+    display: none;
+    
+    @media screen and (min-width: 768px){
+    margin-right: 10px;
+    fill: currentColor;
+    display: block;
+    } 
+}
+}

@@ -1,0 +1,52 @@
+.social-networks {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+
+    &__link {
+    fill: rgba(175, 177, 184, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+    &__link:hover,
+    &__link:focus{
+    fill: $white-color;
+    background-color: $brand-color;
+
+}
+    &__item:not(:last-child) {
+    margin-right: 10px;
+}
+}
+.nets-list {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    &__item {
+        align-items: center;
+    }
+    &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22px;
+    letter-spacing: 0.02em;
+    color: $brand-color;
+    }
+
+    &__bar {
+    width: 22px;
+    height: 0px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    }
+}

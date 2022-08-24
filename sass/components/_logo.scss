@@ -1,0 +1,21 @@
+.page-logo {
+    padding: 16px 0;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    @media screen and (mix-width:767px) {
+        margin-right: 88px;
+        padding: 26px;
+    }
+    &--blue {
+    color: $brand-color;
+}
+    &--black {
+    color: $primal-text-color;
+}
+    &--white {
+    color: $white-color;
+}
+}

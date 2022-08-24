@@ -855,6 +855,11 @@ textarea {
   flex-wrap: wrap;
   align-items: center;
 }
+@media screen and (min-width: 767px) {
+  .nets-list {
+    display: none;
+  }
+}
 .nets-list__item {
   align-items: center;
 }

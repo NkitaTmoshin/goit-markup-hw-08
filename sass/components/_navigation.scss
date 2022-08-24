@@ -29,8 +29,13 @@
     display: block;
     position: relative;
 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
 
-    line-height: 47px;
     text-align: center;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -38,14 +43,22 @@
     color: $primal-text-color;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (min-width:480px){
+    @media screen and (max-width:480px){
         font-size: 40px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 768px) {
         position: relative;
         font-size: 14px;
         line-height: 1.142;
         padding: 32px 0;
+      }
+      @media screen and (min-width: 1200px) {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
       }
 }
     &__link:hover
@@ -61,16 +74,20 @@
     &__link--active {
     display: block;
     position: relative;
-    
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
     letter-spacing: 0.02em;
     color: $brand-color;
     text-decoration: none;
 
-    @media screen and (min-width:480px) {
+    @media screen and (max-width:480px) {
         font-size: 40px;
         line-height: 47px;
     }
-    @media screen and (min-width:768px) {
+    @media screen and (max-width:768px) {
         font-size: 14px;
     }
 }
@@ -87,7 +104,7 @@
         display: none;        
     }
     @media  screen and (min-width:768px) {
-        bottom: -18px;        
+        bottom: -25px;        
     }
 }
     &__item:not(:nth-child(3n))  {
